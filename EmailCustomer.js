@@ -41,8 +41,8 @@ module.exports = EmailGenerator;
 import EmailGenerator from './EmailGenerator.ts' 
 
 it('email', async () { 
-// Antara: no need to create object as it's already been exported
-  new EmailGenerator().email({ 
+
+  new EmailGenerator().email({ // Antara: no need to create object as it's already been exported
     id: 'password_reset', 
     email: 'fake@test.com' 
   }, 23); 
