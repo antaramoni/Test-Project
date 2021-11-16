@@ -1,0 +1,22 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "description": "Just for testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antaramoni/Test-Project.git"
+  },
+  "author": "Antara Chowdhury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antaramoni/Test-Project/issues"
+  },
+  "homepage": "https://github.com/antaramoni/Test-Project#readme",
+  "devDependencies": {
+    "cypress": "^9.0.0"
+  }
+}
