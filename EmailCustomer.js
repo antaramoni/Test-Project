@@ -21,9 +21,9 @@ class EmailCustomer {
   async email(event: any, customerId: number): void { 
 
     const template = await getTemplate(customerId, event.name); // Antara: there is no event.name into email event object, so in 46 line, the parameter of the event should be name
-    const html = ejs.render(template, event); // Antara : why we are passing overlapping arguments like template has event.name and event also has event.name
+    const html = ejs.render(template, event); // Antara : I think this is passing overlapping arguments like template has event.name and event also has event.name
 
-    this.sendemailtocustomer(html, event); // Antara: no  need to pass event again
+    this.sendemailtocustomer(html, event); // Antara: I think no  need to pass event again
   } 
 
   async sendemailtocustomer(html, event): void { 
