@@ -40,7 +40,7 @@ describe("Add Task", () => {
       TableName: "Tasks",
 
       // Specify which items in the results are returned
-      FilterExpression: "Subtitle = :title AND Status = .status",
+      FilterExpression: "Title = :title AND Status = .status",
 
       // Define the expression attribute value, which are substitutes for the values we want to compare.
       ExpressionAttributeValues: {
